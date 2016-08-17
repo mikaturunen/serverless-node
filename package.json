@@ -9,6 +9,7 @@
   "author": "Mika Turunen <mika.turunen@ymail.com>",
   "license": "MIT",
   "dependencies": {
-    "commander": "^2.9.0"
+    "commander": "^2.9.0",
+    "express": "^4.14.0"
   }
 }
