@@ -1,0 +1,27 @@
+{
+  "name": "front-tooling",
+  "version": "0.0.0",
+  "description": "Used only by frontend tooling",
+  "main": "functionality.js",
+  "watch": {
+    "build": {
+      "patterns": [ "index.html", "functionality.js", "style.css" ]
+    }
+  },
+  "scripts": {
+    "minify": "node node_modules/inliner/cli index.html > dist/index.html",
+    "babel": "node node_modules/babel-cli/bin/babel functionality.js --out-file functionality.tmp.js",
+    "build": "npm run babel && npm run minify",
+    "watch": "npm-watch"
+  },
+  "author": "Mika Turunen <mika.turunen@ymail.com>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "6.11.4",
+    "babel-preset-es2015": "6.13.2",
+    "inliner": "1.9.5",
+    "npm-watch": "^0.1.6",
+    "save": "2.3.0"
+  }
+}
