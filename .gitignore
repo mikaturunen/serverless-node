@@ -1,4 +1,2 @@
 node_modules
-f.js
-s.css
-dist
+.DS_Store
