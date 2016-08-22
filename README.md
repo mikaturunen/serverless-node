@@ -5,3 +5,11 @@ Quick attempt at making a proof of a concept PaaS where one can easily deploy no
 One of the key differences is that it'll probably result in creating a some sort of simplistic orchestration tooling for that and containers too.
 
 I don't have a clear goal in my mind with the PoC but I'll tinker away with it and do a clearer README+writeup once it's in a potential stage.
+
+## Notes
+
+Running the CLI in debug mode:
+
+```bash
+DEBUG=* node cli/cli 
+```
