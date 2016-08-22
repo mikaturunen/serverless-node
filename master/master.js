@@ -20,7 +20,7 @@ restApiVersion1.rest.forEach(restApiRoutes => {
 		if (api.path[0] === "/") {
 			api.path = api.path.substring(1);
 		}
-		
+
 		let apiPath = pathApiVersion1 + api.path;
 		console.log(` - ${api.type}:${apiPath}`);
 		rest[api.type](apiPath, api.callback);
